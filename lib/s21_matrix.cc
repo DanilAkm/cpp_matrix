@@ -1,19 +1,11 @@
 #include "../s21_matrix_oop.h"
 
-S21Matrix::S21Matrix() : rows_(5), cols_(5) { CreateMatrix(); }
+S21Matrix::S21Matrix() : rows_(1), cols_(1) { CreateMatrix(); }
 
 S21Matrix::S21Matrix(int rows, int cols) : rows_(rows), cols_(cols) {
   ValidateRowsCols();
   CreateMatrix();
 }
-
-// S21Matrix::S21Matrix(const int rows, const int cols,
-//                      const std::vector<double>& data)
-//     : rows_(rows), cols_(cols) {
-//   CheckCorrectRowsAndCols();
-//   CreateMatrix();
-//   Assign(data);
-// }
 
 S21Matrix::S21Matrix(const S21Matrix& other)
     : rows_(other.rows_), cols_(other.cols_) {

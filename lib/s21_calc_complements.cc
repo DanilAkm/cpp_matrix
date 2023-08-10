@@ -1,6 +1,6 @@
 #include "../s21_matrix_oop.h"
 
-S21Matrix S21Matrix::CalcComplements() {
+S21Matrix S21Matrix::CalcComplements() const {
   ValidateAll();
   if (rows_ != cols_) {
     throw std::invalid_argument("The matrix is not square");

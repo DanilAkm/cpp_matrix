@@ -16,7 +16,6 @@ class S21Matrix {
  public:
   S21Matrix();
   S21Matrix(int rows, int cols);
-  S21Matrix(const int rows, const int cols, const std::vector<double>& data);
   S21Matrix(const S21Matrix& other);
   S21Matrix(S21Matrix&& other) noexcept;
   ~S21Matrix();
@@ -29,10 +28,10 @@ class S21Matrix {
   S21Matrix& MulNumber(const double num);
   S21Matrix& MulMatrix(const S21Matrix& other);
 
-  S21Matrix Transpose();
-  S21Matrix CalcComplements();
-  double Determinant();
-  S21Matrix InverseMatrix();
+  S21Matrix Transpose() const;
+  S21Matrix CalcComplements() const;
+  double Determinant() const;
+  S21Matrix InverseMatrix() const;
   S21Matrix GetMinorMatrix(const int row, const int col) const;
 
   S21Matrix operator+(const S21Matrix& other);

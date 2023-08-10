@@ -1,6 +1,6 @@
 #include "../s21_matrix_oop.h"
 
-S21Matrix S21Matrix::InverseMatrix() {
+S21Matrix S21Matrix::InverseMatrix() const {
   ValidateAll();
   double determinant = Determinant();
   if (!determinant) {

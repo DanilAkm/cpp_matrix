@@ -38,37 +38,3 @@ TEST(tests_methods_mult_matrix_number, correct_arg_2) {
   EXPECT_TRUE(matrix.EqMatrix(result));
   EXPECT_TRUE(result.EqMatrix(matrix));
 }
-
-// TEST(tests_methods_mult_matrix_number, correct_arg_3) {
-//   S21Matrix matrix(2, 3, {5, 34, -4, 844.545, -0.452434, 87});
-//   S21Matrix result(matrix);
-//   matrix.MulNumber(1);
-//   EXPECT_TRUE(matrix.EqMatrix(result));
-//   EXPECT_TRUE(result.EqMatrix(matrix));
-// }
-
-// TEST(tests_methods_mult_matrix_number, correct_arg_4) {
-//   S21Matrix matrix(2, 3, {5, 34, -4, 844.545, -0.452434, 87});
-//   S21Matrix result(2, 3);
-//   matrix.MulNumber(0);
-//   EXPECT_TRUE(matrix.EqMatrix(result));
-//   EXPECT_TRUE(result.EqMatrix(matrix));
-// }
-
-// TEST(tests_methods_mult_matrix_number, correct_arg_5) {
-//   S21Matrix matrix(1, 1);
-//   S21Matrix result(1, 1);
-//   matrix.Assign(0, 0, 1.25).MulNumber(-4);
-//   result.Assign(0, 0, -5);
-//   EXPECT_TRUE(matrix.EqMatrix(result));
-//   EXPECT_TRUE(result.EqMatrix(matrix));
-// }
-
-// TEST(tests_methods_mult_matrix_number, correct_arg_6) {
-//   S21Matrix matrix(3, 3,
-//                    {0.25, 1.25, 2.25, 3.25, 4.25, 5.25, 6.25, 7.25, 8.25});
-//   S21Matrix result(3, 3, {1, 5, 9, 13, 17, 21, 25, 29, 33});
-//   matrix.MulNumber(4);
-//   EXPECT_TRUE(matrix.EqMatrix(result));
-//   EXPECT_TRUE(result.EqMatrix(matrix));
-// }

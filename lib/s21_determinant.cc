@@ -1,6 +1,6 @@
 #include "../s21_matrix_oop.h"
 
-double S21Matrix::Determinant() {
+double S21Matrix::Determinant() const {
   ValidateAll();
   if (rows_ != cols_) {
     throw std::invalid_argument("The matrix is not square");
